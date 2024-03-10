@@ -1,1 +1,1 @@
-# rn-twitter-clone
+# React Native Twitter Clone App
