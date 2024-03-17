@@ -5,7 +5,7 @@ export default function NotificationsScreen({ navigation}) {
   return (
     <View>
       <Text>
-        Home Screen
+        Notifications Screen
         </Text>
     </View>
   );

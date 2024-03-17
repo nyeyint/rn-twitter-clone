@@ -5,7 +5,7 @@ export default function SearchScreen({ navigation}) {
   return (
     <View>
       <Text>
-        Home Screen
+        Search Screen
         </Text>
     </View>
   );
