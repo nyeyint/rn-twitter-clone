@@ -22,11 +22,11 @@ const Tab = createBottomTabNavigator();
 
 const HomeStackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={{
-      headerShown: false
-    }} >
-      <Stack.Screen name="Tab" component={BottomTab} />
-      <Stack.Screen name="NewTweet" component={NewTweet} />
+    <Stack.Navigator>
+      <Stack.Screen name="Tab" component={BottomTab} options={{
+        headerShown: false
+      }} />
+      <Stack.Screen name="NewTweet" component={NewTweet}/>
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Tweet" component={TweetScreen} />
     </Stack.Navigator>
@@ -42,6 +42,7 @@ const BottomTab = () => {
     initialRouteName="Home"
     >
       <Tab.Screen name="Home" component={HomeScreen} options={{
+        headerTitle: 'Home',
         tabBarIcon: ({ focused }) => (
           <Ionicons name="home" size={24} color={focused ? 'black' : 'grey'} />
         )
@@ -52,6 +53,7 @@ const BottomTab = () => {
         )
       }} />
       <Tab.Screen name="Notifications" component={NotificationsScreen} options={{
+        headerTitle: 'Notifications',
         tabBarIcon: ({ focused }) => (
           <Ionicons name="notifications" size={24} color={focused ? 'black' : 'grey'} />
         )
@@ -64,9 +66,9 @@ const BottomTab = () => {
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName='Home' >
-        <Drawer.Screen name="Home" component={HomeStackNavigator} />
-        <Drawer.Screen name="Settings" component={SettingsScreen} />
+      <Drawer.Navigator initialRouteName='Home'>
+        <Drawer.Screen name="Home" component={HomeStackNavigator}/>
+        <Drawer.Screen name="Settings" component={SettingsScreen}/>
     </Drawer.Navigator>
     </NavigationContainer>
   );
