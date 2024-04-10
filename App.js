@@ -3,14 +3,14 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screens/HomeScreen';
-import NewTweet from './screens/NewTweet';
-import ProfileScreen from './screens/ProfileScreen';
-import TweetScreen from './screens/TweetScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import NewTweet from './src/screens/NewTweet';
+import ProfileScreen from './src/screens/ProfileScreen';
+import TweetScreen from './src/screens/TweetScreen';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import SettingsScreen from './screens/SettingsScreen';
-import SearchScreen from './screens/SearchScreen';
-import NotificationsScreen from './screens/NotificationsScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
+import SearchScreen from './src/screens/SearchScreen';
+import NotificationsScreen from './src/screens/NotificationsScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 

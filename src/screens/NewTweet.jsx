@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function TweetScreen() {
+export default function NewTweet() {
   return (
     <View>
-      <Text>Tweet Screen</Text>
+      <Text>New Tweet Screen update</Text>
     </View>
   );
 }
